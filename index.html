@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>vF的个人博客</title>
+  <title>vF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="软件技术|前端工程师">
+  <meta name="description" content="前端工程师">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,web,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="website">
-<meta property="og:title" content="vF的个人博客">
+<meta property="og:title" content="vF的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="vF的个人博客">
-<meta property="og:description" content="软件技术|前端工程师">
+<meta property="og:site_name" content="vF的博客">
+<meta property="og:description" content="前端工程师">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vF的个人博客">
-<meta name="twitter:description" content="软件技术|前端工程师">
+<meta name="twitter:title" content="vF的博客">
+<meta name="twitter:description" content="前端工程师">
   
-    <link rel="alternative" href="/atom.xml" title="vF的个人博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="vF的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -244,37 +245,29 @@
 
 
   
-    <article id="post-让盒子居中的四种方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-水平垂直居中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/17/让盒子居中的四种方法/">让盒子居中的四种方法</a>
+      <a class="article-title" href="/2015/06/08/水平垂直居中/">css水平垂直居中的4种方法</a>
     </h1>
   
 
         
-        <a href="/2016/05/17/让盒子居中的四种方法/" class="archive-article-date">
-  	<time datetime="2016-05-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-17</time>
+        <a href="/2015/06/08/水平垂直居中/" class="archive-article-date">
+  	<time datetime="2015-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="让盒子居中的方法"><a href="#让盒子居中的方法" class="headerlink" title="让盒子居中的方法"></a>让盒子居中的方法</h2><h3 id="第一种方法position-margin"><a href="#第一种方法position-margin" class="headerlink" title="第一种方法position+margin"></a>第一种方法position+margin</h3><pre><code>#box{
-
-        position: fixed;(也可以是absolute)
-        left : 50%;
-        margin-left: -盒子宽度的一半;
-        top:50%;
-        margin-top: -盒子高度的一半;
-    }
-</code></pre>
+        <h3 id="方法一-margin-auto"><a href="#方法一-margin-auto" class="headerlink" title="方法一:margin:auto"></a>方法一:margin:auto</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">.container&#123;</span><br><span class="line">	  width: 300px;</span><br><span class="line">	  height: 300px;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  border: 1px solid #465468;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2016/05/17/让盒子居中的四种方法/#more">more >></a>
+          <a class="article-more-a" href="/2015/06/08/水平垂直居中/#more">more >></a>
         
       
 
@@ -288,7 +281,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-布局</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">居中</a>
         		</li>
       		
 		</ul>
@@ -298,7 +291,84 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/17/让盒子居中的四种方法/">展开全文 >></a>
+          <a class="article-more-a" href="/2015/06/08/水平垂直居中/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-清除浮动的三种方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/08/清除浮动的三种方法/">清除浮动的三种方法</a>
+    </h1>
+  
+
+        
+        <a href="/2015/06/08/清除浮动的三种方法/" class="archive-article-date">
+  	<time datetime="2015-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一:"></a>方法一:</h3><p>在结束浮动的标签后添加一个带有清除浮动类的div</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">	.clear&#123;</span><br><span class="line">		clear: both;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">HTML代码:</span><br><span class="line">	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2015/06/08/清除浮动的三种方法/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">清除浮动</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/06/08/清除浮动的三种方法/">展开全文 >></a>
         </p>
       
 
@@ -427,6 +497,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">居中</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">清除浮动</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -477,7 +555,27 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://www.vfsworld.xin" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
@@ -488,7 +586,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">世界转得很快&lt;br&gt;&lt;br&gt;你转得够不够过快</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">vF,&lt;br/&gt;前端开发工程师&lt;br/&gt;&lt;br/&gt;颜色不一样的码农&lt;br/&gt;&lt;br/&gt;世界转得很快&lt;br/&gt;你转得够不够过快</div>
   	  	
     	</section>
     
