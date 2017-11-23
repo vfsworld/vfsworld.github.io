@@ -163,25 +163,23 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/初识ES6与ES之区别/">初识ES6与ES之区别</a>
+      <a class="article-title" href="/2017/06/22/初识ES6与ES之区别/">初识ES6与ES之区别</a>
     </h1>
   
 
         
-        <a href="/2017/11/23/初识ES6与ES之区别/" class="archive-article-date">
-  	<time datetime="2017-11-23T13:01:43.988Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
+        <a href="/2017/06/22/初识ES6与ES之区别/" class="archive-article-date">
+  	<time datetime="2017-06-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-let定义块级作用域-相当于ES5的IIFE"><a href="#1-let定义块级作用域-相当于ES5的IIFE" class="headerlink" title="1.let定义块级作用域(相当于ES5的IIFE)"></a>1.let定义块级作用域(相当于ES5的IIFE)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var sum=0;</span><br><span class="line">for(var i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br><span class="line">&gt;i会造成全局污染</span><br><span class="line">var sum=0;</span><br><span class="line">for(let i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br></pre></td></tr></table></figure>
-<h3 id="2-const定义常量"><a href="#2-const定义常量" class="headerlink" title="2.const定义常量"></a>2.const定义常量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const a=10;</span><br><span class="line">a=20;//常量只能读取不能修改</span><br></pre></td></tr></table></figure>
-<h3 id="3-gt-箭头函数"><a href="#3-gt-箭头函数" class="headerlink" title="3. =&gt;箭头函数"></a>3. =&gt;箭头函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function()&#123;</span><br><span class="line">    	....</span><br><span class="line">    &#125;,2000);</span><br><span class="line">    </span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">    	...</span><br><span class="line">    &#125;,2000);</span><br></pre></td></tr></table></figure>
-<h3 id="4-class-类的定义"><a href="#4-class-类的定义" class="headerlink" title="4.class 类的定义"></a>4.class 类的定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function show(name,age)&#123;</span><br><span class="line">	  this.name=name;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">  class 类名&#123;</span><br><span class="line">	//实例化类时默认会执行构造函数</span><br><span class="line">	constructor()&#123;</span><br><span class="line">		//初始化对象的语句</span><br><span class="line">	&#125;</span><br><span class="line">	//原型方法</span><br><span class="line">	show()&#123;</span><br><span class="line">	  ...</span><br><span class="line">	&#125;</span><br><span class="line">	//静态方法</span><br><span class="line">	static run()&#123;</span><br><span class="line">	  ...</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="5-继承-extends"><a href="#5-继承-extends" class="headerlink" title="5.继承 extends"></a>5.继承 extends</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Son extends Father&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">	  super();</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
+        <h3 id="1-let定义块级作用域-相当于ES5的IIFE"><a href="#1-let定义块级作用域-相当于ES5的IIFE" class="headerlink" title="1.let定义块级作用域(相当于ES5的IIFE)"></a>1.let定义块级作用域(相当于ES5的IIFE)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var sum=0;</span><br><span class="line">for(var i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br><span class="line">//i会造成全局污染</span><br><span class="line">var sum=0;</span><br><span class="line">for(let i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/06/22/初识ES6与ES之区别/#more">more >></a>
+        
       
 
       
@@ -194,7 +192,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ES6,ES5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-ES6 -ES5</a>
         		</li>
       		
 		</ul>
@@ -204,7 +202,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/23/初识ES6与ES之区别/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/06/22/初识ES6与ES之区别/">展开全文 >></a>
         </p>
       
 
@@ -241,13 +239,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/关于前端路上一对JS的理解/">关于前端路上一对JS的理解</a>
+      <a class="article-title" href="/2017/03/12/关于前端路上一对JS的理解/">关于前端路上一对JS的理解</a>
     </h1>
   
 
         
-        <a href="/2017/11/23/关于前端路上一对JS的理解/" class="archive-article-date">
-  	<time datetime="2017-11-23T12:51:46.010Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
+        <a href="/2017/03/12/关于前端路上一对JS的理解/" class="archive-article-date">
+  	<time datetime="2017-03-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
 </a>
         
       </header>
@@ -256,16 +254,10 @@
       
         <h3 id="commonjs"><a href="#commonjs" class="headerlink" title="commonjs"></a>commonjs</h3><pre><code>是一个规范:服务器的JS模块化规范
 commonjs是一个对JS进行加强，实现后端编程语言的规范。
-</code></pre><p>AMD<br>    是一个规范:客户端的JS模块化规范,国外流行<br>    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。</p>
-<h3 id="requireJS-是一个客户端JS模块化的框架"><a href="#requireJS-是一个客户端JS模块化的框架" class="headerlink" title="requireJS 是一个客户端JS模块化的框架"></a>requireJS 是一个客户端JS模块化的框架</h3><p>CMD<br>    一个规范:客户端的JS模块化规范,国内流行 ,依赖就近<br>    CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。</p>
-<h3 id="SeaJS-是一个客户端JS模块化的框架"><a href="#SeaJS-是一个客户端JS模块化的框架" class="headerlink" title="SeaJS     是一个客户端JS模块化的框架"></a>SeaJS     是一个客户端JS模块化的框架</h3><h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><pre><code>是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
-Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。
-Node.js 的包管理器 npm，是全球最大的开源库生态系统。
-</code></pre><p>Express<br>    express是一个基于node.js的极简、快速、灵活的web开发框架，可以使用express快速搭建web服务器。    </p>
-<h3 id="ReactJS"><a href="#ReactJS" class="headerlink" title="ReactJS"></a>ReactJS</h3><p>React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。<br>        是一个用于构建用户界面的javascript库 主要用于构建UI(MVC中的V)<br>        特点：<br>    1.声明式设计：React采用声明范式(Declarative)，可以轻松描述应用。数据变化后，React 概念上与点击“F5刷新”按钮类似，但仅会更新变化的部分。（diff最小粒度）<br>    2.高效：React通过对DOM的模拟，最大限度地减少与DOM的交互。<br>    3.灵活：React可以与已知的库或框架很好地配合。<br>    (JS框架 代码管理框架 视图层框架 最小diff 自动编译<br>    智能分析)</p>
-<p>jsx  是react中的一种语法格式,是javescript的一种语法补充 可以直接在JS里面编写HTML标签,不能直接执行,需要使用babel编译后才能执行<br>    JSX主要用于在组件中编写HTML标签，在渲染时也可以将组件写成JSX的语法</p>
-<h3 id="angularjs"><a href="#angularjs" class="headerlink" title="angularjs"></a>angularjs</h3><p>AngularJS是Google开发的纯客户端JavaScript技术的WEB框架,用于扩展增强HTML功能,它专为构建“强大”的WEB应用而设计。 Angular 简称 ng；</p>
-<h3 id="vuejs"><a href="#vuejs" class="headerlink" title="vuejs"></a>vuejs</h3>
+</code></pre><p>AMD<br>    是一个规范:客户端的JS模块化规范,国外流行<br>    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>
+        
+          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的理解/#more">more >></a>
+        
       
 
       
@@ -278,7 +270,7 @@ Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JS 框架 commonJS requireJS SeaJS ReactJS AngularJS VueJS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
         		</li>
       		
 		</ul>
@@ -288,7 +280,7 @@ Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/23/关于前端路上一对JS的理解/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的理解/">展开全文 >></a>
         </p>
       
 
@@ -325,13 +317,13 @@ Node.js 的包管理器 npm，是全球最大的开源库生态系统。
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/23/关于JavaScript中原型的理解/">关于JavaScript中原型的理解</a>
+      <a class="article-title" href="/2016/11/12/关于JavaScript中原型的理解/">关于JavaScript中原型的理解</a>
     </h1>
   
 
         
-        <a href="/2017/11/23/关于JavaScript中原型的理解/" class="archive-article-date">
-  	<time datetime="2017-11-23T12:43:29.575Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
+        <a href="/2016/11/12/关于JavaScript中原型的理解/" class="archive-article-date">
+  	<time datetime="2016-11-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-12</time>
 </a>
         
       </header>
@@ -355,7 +347,7 @@ Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">原型 prototype _proto_ JavaScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-原型 -prototype -_proto_ -JavaScript</a>
         		</li>
       		
 		</ul>
@@ -365,7 +357,7 @@ Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/23/关于JavaScript中原型的理解/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/11/12/关于JavaScript中原型的理解/">展开全文 >></a>
         </p>
       
 
@@ -662,6 +654,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">ES6,ES5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-原型 -prototype -_proto_ -JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">-ES6 -ES5</a>
               </li>
             
             <div class="clearfix"></div>

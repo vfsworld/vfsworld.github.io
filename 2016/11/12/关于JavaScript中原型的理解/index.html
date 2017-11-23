@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>清除浮动的三种方法 | vF的博客</title>
+  <title>关于JavaScript中原型的理解 | vF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一:在结束浮动的标签后添加一个带有清除浮动类的div 1234567CSS代码:	.clear&amp;#123;		clear: both;	&amp;#125;	HTML代码:	&amp;lt;div class=&amp;quot;clear&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
-<meta name="keywords" content="清除浮动">
+  <meta name="description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
+<meta name="keywords" content="-原型 -prototype -_proto_ -JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="清除浮动的三种方法">
-<meta property="og:url" content="http://yoursite.com/2015/06/08/清除浮动的三种方法/index.html">
+<meta property="og:title" content="关于JavaScript中原型的理解">
+<meta property="og:url" content="http://yoursite.com/2016/11/12/关于JavaScript中原型的理解/index.html">
 <meta property="og:site_name" content="vF的博客">
-<meta property="og:description" content="方法一:在结束浮动的标签后添加一个带有清除浮动类的div 1234567CSS代码:	.clear&amp;#123;		clear: both;	&amp;#125;	HTML代码:	&amp;lt;div class=&amp;quot;clear&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
+<meta property="og:description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-12T15:34:47.593Z">
+<meta property="og:updated_time" content="2017-11-23T13:08:16.399Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清除浮动的三种方法">
-<meta name="twitter:description" content="方法一:在结束浮动的标签后添加一个带有清除浮动类的div 1234567CSS代码:	.clear&amp;#123;		clear: both;	&amp;#125;	HTML代码:	&amp;lt;div class=&amp;quot;clear&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
+<meta name="twitter:title" content="关于JavaScript中原型的理解">
+<meta name="twitter:description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
   
     <link rel="alternative" href="/atom.xml" title="vF的博客" type="application/atom+xml">
   
@@ -155,33 +155,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-清除浮动的三种方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于JavaScript中原型的理解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      清除浮动的三种方法
+      关于JavaScript中原型的理解
     </h1>
   
 
         
-        <a href="/2015/06/08/清除浮动的三种方法/" class="archive-article-date">
-  	<time datetime="2015-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-08</time>
+        <a href="/2016/11/12/关于JavaScript中原型的理解/" class="archive-article-date">
+  	<time datetime="2016-11-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一:"></a>方法一:</h3><p>在结束浮动的标签后添加一个带有清除浮动类的div</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">	.clear&#123;</span><br><span class="line">		clear: both;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">HTML代码:</span><br><span class="line">	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二:"></a>方法二:</h3><p>在父级元素上设置overflow: hidden;（不推荐—-如果父级元素有高，超出内容就不可见，影响用户体验，SEO优化是搜索引擎会认为是黑帽作弊手段）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.parentdiv&#123;</span><br><span class="line">	overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三:"></a>方法三:</h3><p>在父级元素后面添加一个看不见的块元素(结合伪元素::after)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">	.parentdiv::after&#123;</span><br><span class="line">		width: 0;</span><br><span class="line">		height: 0;</span><br><span class="line">		content: &quot;&quot;;</span><br><span class="line">		display: block;</span><br><span class="line">		clear: both;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><blockquote>
+<p>每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题</p>
+<p>那么prototype还有一个<em>proto</em> prototype是类的对象,<em>proto</em>是类实例化出来的对象的属性或者的对象,<br>是对类原型的引用.</p>
+</blockquote>
 
       
 
@@ -195,7 +192,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">清除浮动</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-原型 -prototype -_proto_ -JavaScript</a>
         		</li>
       		
 		</ul>
@@ -251,7 +248,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2015/06/08/清除浮动的三种方法/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/11/12/关于JavaScript中原型的理解/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,15 +262,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2015/06/08/水平垂直居中/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/03/12/关于前端路上一对JS的理解/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          css水平垂直居中的4种方法
+          关于前端路上一对JS的理解
         
       </div>
     </a>
   
+  
+    <a href="/2015/06/08/水平垂直居中/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css水平垂直居中的4种方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

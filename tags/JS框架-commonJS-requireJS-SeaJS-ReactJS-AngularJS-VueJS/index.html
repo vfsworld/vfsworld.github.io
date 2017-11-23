@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>初识ES6与ES之区别 | vF的博客</title>
+  <title>Tag: -JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS | vF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.let定义块级作用域(相当于ES5的IIFE)1234567891011var sum=0;for(var i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);//i==11&amp;gt;i会造成全局污染var sum=0;for(let i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);/">
-<meta name="keywords" content="ES6,ES5">
-<meta property="og:type" content="article">
-<meta property="og:title" content="初识ES6与ES之区别">
-<meta property="og:url" content="http://yoursite.com/2017/11/23/初识ES6与ES之区别/index.html">
+  <meta name="description" content="前端工程师">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,web,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="og:type" content="website">
+<meta property="og:title" content="vF的博客">
+<meta property="og:url" content="http://yoursite.com/tags/JS框架-commonJS-requireJS-SeaJS-ReactJS-AngularJS-VueJS/index.html">
 <meta property="og:site_name" content="vF的博客">
-<meta property="og:description" content="1.let定义块级作用域(相当于ES5的IIFE)1234567891011var sum=0;for(var i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);//i==11&amp;gt;i会造成全局污染var sum=0;for(let i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);/">
+<meta property="og:description" content="前端工程师">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T13:00:36.155Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初识ES6与ES之区别">
-<meta name="twitter:description" content="1.let定义块级作用域(相当于ES5的IIFE)1234567891011var sum=0;for(var i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);//i==11&amp;gt;i会造成全局污染var sum=0;for(let i=1;i&amp;lt;=10;i++)&amp;#123;  sum+=i;&amp;#125;console.log(i);/">
+<meta name="twitter:title" content="vF的博客">
+<meta name="twitter:description" content="前端工程师">
   
     <link rel="alternative" href="/atom.xml" title="vF的博客" type="application/atom+xml">
   
@@ -155,150 +154,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-初识ES6与ES之区别" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      初识ES6与ES之区别
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/03/12/关于前端路上一对JS的理解/" class="archive-article-date">
+  	<time datetime="2017-03-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/03/12/关于前端路上一对JS的理解/">关于前端路上一对JS的理解</a>
     </h1>
   
 
-        
-        <a href="/2017/11/23/初识ES6与ES之区别/" class="archive-article-date">
-  	<time datetime="2017-11-23T13:01:43.988Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-let定义块级作用域-相当于ES5的IIFE"><a href="#1-let定义块级作用域-相当于ES5的IIFE" class="headerlink" title="1.let定义块级作用域(相当于ES5的IIFE)"></a>1.let定义块级作用域(相当于ES5的IIFE)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var sum=0;</span><br><span class="line">for(var i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br><span class="line">&gt;i会造成全局污染</span><br><span class="line">var sum=0;</span><br><span class="line">for(let i=1;i&lt;=10;i++)&#123;</span><br><span class="line">  sum+=i;</span><br><span class="line">&#125;</span><br><span class="line">console.log(i);//i==11</span><br></pre></td></tr></table></figure>
-<h3 id="2-const定义常量"><a href="#2-const定义常量" class="headerlink" title="2.const定义常量"></a>2.const定义常量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const a=10;</span><br><span class="line">a=20;//常量只能读取不能修改</span><br></pre></td></tr></table></figure>
-<h3 id="3-gt-箭头函数"><a href="#3-gt-箭头函数" class="headerlink" title="3. =&gt;箭头函数"></a>3. =&gt;箭头函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function()&#123;</span><br><span class="line">    	....</span><br><span class="line">    &#125;,2000);</span><br><span class="line">    </span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">    	...</span><br><span class="line">    &#125;,2000);</span><br></pre></td></tr></table></figure>
-<h3 id="4-class-类的定义"><a href="#4-class-类的定义" class="headerlink" title="4.class 类的定义"></a>4.class 类的定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function show(name,age)&#123;</span><br><span class="line">	  this.name=name;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">  class 类名&#123;</span><br><span class="line">	//实例化类时默认会执行构造函数</span><br><span class="line">	constructor()&#123;</span><br><span class="line">		//初始化对象的语句</span><br><span class="line">	&#125;</span><br><span class="line">	//原型方法</span><br><span class="line">	show()&#123;</span><br><span class="line">	  ...</span><br><span class="line">	&#125;</span><br><span class="line">	//静态方法</span><br><span class="line">	static run()&#123;</span><br><span class="line">	  ...</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="5-继承-extends"><a href="#5-继承-extends" class="headerlink" title="5.继承 extends"></a>5.继承 extends</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Son extends Father&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">	  super();</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ES6,ES5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/23/初识ES6与ES之区别/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2017/11/23/关于前端路上一对JS的理解/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于前端路上一对JS的理解</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -321,9 +230,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -412,6 +321,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">ES6,ES5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-原型 -prototype -_proto_ -JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">-ES6 -ES5</a>
               </li>
             
             <div class="clearfix"></div>

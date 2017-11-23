@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>关于JavaScript中原型的理解 | vF的博客</title>
+  <title>关于前端路上一对JS的理解 | vF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
-<meta name="keywords" content="原型 prototype _proto_ JavaScript">
+  <meta name="description" content="commonjs是一个规范:服务器的JS模块化规范 commonjs是一个对JS进行加强，实现后端编程语言的规范。 AMD    是一个规范:客户端的JS模块化规范,国外流行    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。">
+<meta name="keywords" content="-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于JavaScript中原型的理解">
-<meta property="og:url" content="http://yoursite.com/2017/11/23/关于JavaScript中原型的理解/index.html">
+<meta property="og:title" content="关于前端路上一对JS的理解">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/关于前端路上一对JS的理解/index.html">
 <meta property="og:site_name" content="vF的博客">
-<meta property="og:description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
+<meta property="og:description" content="commonjs是一个规范:服务器的JS模块化规范 commonjs是一个对JS进行加强，实现后端编程语言的规范。 AMD    是一个规范:客户端的JS模块化规范,国外流行    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T12:43:56.663Z">
+<meta property="og:updated_time" content="2017-11-23T13:07:41.049Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于JavaScript中原型的理解">
-<meta name="twitter:description" content="原型 每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题 那么prototype还有一个proto prototype是类的对象,proto是类实例化出来的对象的属性或者的对象,是对类原型的引用.">
+<meta name="twitter:title" content="关于前端路上一对JS的理解">
+<meta name="twitter:description" content="commonjs是一个规范:服务器的JS模块化规范 commonjs是一个对JS进行加强，实现后端编程语言的规范。 AMD    是一个规范:客户端的JS模块化规范,国外流行    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。">
   
     <link rel="alternative" href="/atom.xml" title="vF的博客" type="application/atom+xml">
   
@@ -155,31 +155,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于JavaScript中原型的理解" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于前端路上一对JS的理解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于JavaScript中原型的理解
+      关于前端路上一对JS的理解
     </h1>
   
 
         
-        <a href="/2017/11/23/关于JavaScript中原型的理解/" class="archive-article-date">
-  	<time datetime="2017-11-23T12:43:29.575Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
+        <a href="/2017/03/12/关于前端路上一对JS的理解/" class="archive-article-date">
+  	<time datetime="2017-03-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><blockquote>
-<p>每个构造函数都有这么一个prototype属性或者说是对象它本事就是一个的对象 我们可以在原型上添加公共方法和属性.解决方法过载导致内存资源浪费的问题</p>
-<p>那么prototype还有一个<em>proto</em> prototype是类的对象,<em>proto</em>是类实例化出来的对象的属性或者的对象,<br>是对类原型的引用.</p>
-</blockquote>
-
+        <h3 id="commonjs"><a href="#commonjs" class="headerlink" title="commonjs"></a>commonjs</h3><pre><code>是一个规范:服务器的JS模块化规范
+commonjs是一个对JS进行加强，实现后端编程语言的规范。
+</code></pre><p>AMD<br>    是一个规范:客户端的JS模块化规范,国外流行<br>    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br><a id="more"></a></p>
+<h3 id="requireJS-是一个客户端JS模块化的框架"><a href="#requireJS-是一个客户端JS模块化的框架" class="headerlink" title="requireJS 是一个客户端JS模块化的框架"></a>requireJS 是一个客户端JS模块化的框架</h3><p>CMD<br>    一个规范:客户端的JS模块化规范,国内流行 ,依赖就近<br>    CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。</p>
+<h3 id="SeaJS-是一个客户端JS模块化的框架"><a href="#SeaJS-是一个客户端JS模块化的框架" class="headerlink" title="SeaJS     是一个客户端JS模块化的框架"></a>SeaJS     是一个客户端JS模块化的框架</h3><h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><pre><code>是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
+Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。
+Node.js 的包管理器 npm，是全球最大的开源库生态系统。
+</code></pre><p>Express<br>    express是一个基于node.js的极简、快速、灵活的web开发框架，可以使用express快速搭建web服务器。    </p>
+<h3 id="ReactJS"><a href="#ReactJS" class="headerlink" title="ReactJS"></a>ReactJS</h3><p>React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。<br>        是一个用于构建用户界面的javascript库 主要用于构建UI(MVC中的V)<br>        特点：<br>    1.声明式设计：React采用声明范式(Declarative)，可以轻松描述应用。数据变化后，React 概念上与点击“F5刷新”按钮类似，但仅会更新变化的部分。（diff最小粒度）<br>    2.高效：React通过对DOM的模拟，最大限度地减少与DOM的交互。<br>    3.灵活：React可以与已知的库或框架很好地配合。<br>    (JS框架 代码管理框架 视图层框架 最小diff 自动编译<br>    智能分析)</p>
+<p>jsx  是react中的一种语法格式,是javescript的一种语法补充 可以直接在JS里面编写HTML标签,不能直接执行,需要使用babel编译后才能执行<br>    JSX主要用于在组件中编写HTML标签，在渲染时也可以将组件写成JSX的语法</p>
+<h3 id="angularjs"><a href="#angularjs" class="headerlink" title="angularjs"></a>angularjs</h3><p>AngularJS是Google开发的纯客户端JavaScript技术的WEB框架,用于扩展增强HTML功能,它专为构建“强大”的WEB应用而设计。 Angular 简称 ng；</p>
+<h3 id="vuejs"><a href="#vuejs" class="headerlink" title="vuejs"></a>vuejs</h3>
       
 
       
@@ -192,7 +199,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">原型 prototype _proto_ JavaScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
         		</li>
       		
 		</ul>
@@ -248,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/23/关于JavaScript中原型的理解/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/12/关于前端路上一对JS的理解/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -262,18 +269,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/23/关于前端路上一对JS的理解/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/22/初识ES6与ES之区别/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于前端路上一对JS的理解
+          初识ES6与ES之区别
         
       </div>
     </a>
   
   
-    <a href="/2015/06/08/水平垂直居中/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css水平垂直居中的4种方法</div>
+    <a href="/2016/11/12/关于JavaScript中原型的理解/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于JavaScript中原型的理解</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -420,6 +427,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">ES6,ES5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-原型 -prototype -_proto_ -JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-JS框架 -commonJS -requireJS -SeaJS -ReactJS -AngularJS -VueJS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">-ES6 -ES5</a>
               </li>
             
             <div class="clearfix"></div>
