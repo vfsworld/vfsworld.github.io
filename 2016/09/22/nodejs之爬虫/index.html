@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2016/11 | vF的博客</title>
+  <title>简单的NodeJS爬虫 | vF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端工程师">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,web,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="vF的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+  <meta name="description" content="准备工作 看到这篇博客时, 默认您已经掌握了nodejs的基本知识以及模块化的相关理念, 以及npm包管理的简单使用方法(也就一个cmd命令, npm i),所以基本上是看一遍之后就可以非常简单的上手的. 本次的数据库是直接使用的mongoDB, 简单上手,值得拥有. mongoDB的配置 关键是配置这块, 安装好之后,我们在项目的文件夹下创建一个db文件夹, 当然,项目文件夹是要存储你待会儿写的">
+<meta name="keywords" content="爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单的NodeJS爬虫">
+<meta property="og:url" content="http://yoursite.com/2016/09/22/nodejs之爬虫/index.html">
 <meta property="og:site_name" content="vF的博客">
-<meta property="og:description" content="前端工程师">
+<meta property="og:description" content="准备工作 看到这篇博客时, 默认您已经掌握了nodejs的基本知识以及模块化的相关理念, 以及npm包管理的简单使用方法(也就一个cmd命令, npm i),所以基本上是看一遍之后就可以非常简单的上手的. 本次的数据库是直接使用的mongoDB, 简单上手,值得拥有. mongoDB的配置 关键是配置这块, 安装好之后,我们在项目的文件夹下创建一个db文件夹, 当然,项目文件夹是要存储你待会儿写的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-01T08:06:52.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vF的博客">
-<meta name="twitter:description" content="前端工程师">
+<meta name="twitter:title" content="简单的NodeJS爬虫">
+<meta name="twitter:description" content="准备工作 看到这篇博客时, 默认您已经掌握了nodejs的基本知识以及模块化的相关理念, 以及npm包管理的简单使用方法(也就一个cmd命令, npm i),所以基本上是看一遍之后就可以非常简单的上手的. 本次的数据库是直接使用的mongoDB, 简单上手,值得拥有. mongoDB的配置 关键是配置这块, 安装好之后,我们在项目的文件夹下创建一个db文件夹, 当然,项目文件夹是要存储你待会儿写的">
   
     <link rel="alternative" href="/atom.xml" title="vF的博客" type="application/atom+xml">
   
@@ -152,60 +153,237 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-nodejs之爬虫" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/12/关于JavaScript中原型的理解/" class="archive-article-date">
-  	<time datetime="2016-11-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/12/关于JavaScript中原型的理解/">关于JavaScript中原型的理解</a>
+    <h1 class="article-title" itemprop="name">
+      简单的NodeJS爬虫
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/09/22/nodejs之爬虫/" class="archive-article-date">
+  	<time datetime="2016-09-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>准备工作</p>
+<p>看到这篇博客时, 默认您已经掌握了nodejs的基本知识以及模块化的相关理念, 以及npm包管理的简单使用方法(也就一个cmd命令, npm i),所以基本上是看一遍之后就可以非常简单的上手的.</p>
+<p>本次的数据库是直接使用的mongoDB, 简单上手,值得拥有.</p>
+<p>mongoDB的配置</p>
+<p>关键是配置这块, 安装好之后,我们在项目的文件夹下创建一个db文件夹, 当然,项目文件夹是要存储你待会儿写的代码用的,新建一个就好</p>
+<p>下好之后, 可以启动cmd(win + r, 然后回车) 输入mongo</p>
+<p>输完了吗? 是不是没有看到结果?</p>
+<p>没有结果就对了,因为我没教你配置环境变量啊</p>
+<p>配置环境变量</p>
+<p>首先,进入安装目录的bin文件夹,比如我是直接在安装的时候全部点的下一步,所以我的安装目录在C:\Program Files\MongoDB\Server\3.2\bin, 找到这个地方之后,在地址栏, 将这个文件路径复制下来,粘贴到环境变量的对应地方</p>
+<p>环境变量的位置在: 我的电脑右键&gt; 属性 &gt; 高级系统设置 &gt; 环境变量 &gt; 管理员的用户变量</p>
+<p>注意不要动系统变量,不然一旦操作不慎是会造成系统宕机的.</p>
+<p>我们在用户变量的PATH中,鼠标光标点到最后,在它后面插上一个小分号</p>
+<p>哎, 怎么有了一种邪恶的感觉</p>
+<p>咳咳~ 插进去之后, 将我们之前bin目录的文件路径复制上去,然后确定</p>
+<p>现在我们要做一下简单的配置让mongoDB启动起来:</p>
+<p>mongod –storageEngine mmapv1 –dbpath “d:\mongodb\db” –logpath “d:\mongodb\log\MongoDB.log</p>
+<p>下面详细讲一下配置的参数:</p>
+<p>mongod mongoDB的命令,这个不用说</p>
+<p>–storageEngine mmapv1 这是一个比较老的mongoDB的存储引擎, 32位系统的童鞋需要有这条命令, 64位系统的可以不用,</p>
+<p>–dbpath “d:\mongodb\db” 数据库路径,找到项目文件夹, 把自己的项目文件夹的db路径替换掉上面的路径</p>
+<p>–logpath “d:\mongodb\log\MongoDB.log 日志路径,一般我们会放在和db一起, 也是一样的, 把自己的log文件夹的路径替换掉上面的路径,因为刚开始是没有MongoDB.log这个文件的,所以需要新建一个.</p>
+<p>执行成功之后,如果没有看到ERROR的提示, 那么恭喜你,mongo的服务已经成功启动了, 报错的可以再往上翻一下是不是有步骤遗漏, 因为我也是纯手工码字, 难免可能自己也有遗漏的地方, 确实不懂的地方也可以度娘或google</p>
+<p>以上,mongo的配置就搞定了,mongo服务默认跑在27017端口, 如果不需要长期使用, 保持cmd挂起服务就正常运行的, 记住不能关掉哦</p>
+<p>如果需要长期使用mongo服务的, 可以将mongo服务设置为系统服务,开机即启动, 可以在cmd中执行以下代码, 用于创建mongo服务进程</p>
+<p>mongod –storageEngine mmapv1 –dbpath “d:\mongodb\db” –logpath “d:\mongodb\log\MongoDB.log” –install –serviceName “MongoDB”</p>
+<p>这个是mongo的指令,所以要在cmd状态下,不要在mongo的交互状态下执行这个命令,否则会报错的</p>
+<p>完成以上指令, 就已经成功创建了系统服务了, 我们现在来启动它, 在cmd中输入:</p>
+<p>NET START MongoDB</p>
+<p>提示服务器启动成功, bongo~</p>
+<p>安装依赖</p>
+<p>进入项目文件夹, 在cmd中输入npm init 创建一个json文件, 然后使用npm i <em> 一次安装express, cheerio, mongoose, superagent这几个依赖, 所以需要将指令中的</em>改为以上的依赖名称</p>
+<p>万事俱备只欠东风了, 我们新建一个app.js文件, 并引入刚刚安装的依赖</p>
+<p>var express = require(‘express’)<br>var cheerio = require(‘cheerio’)<br>var superagent = require(‘superagent’)<br>var mongoose = require(‘mongoose’)<br>下面来大概说明一下这几个模块的作用</p>
+<p>express: 一个极简快速灵活的web开发框架, 用来快速搭建web服务器的</p>
+<p>cheerio: nodejs中的jQuery</p>
+<p>superagent 用来做客户端请求代理的, 直接点儿说就是代我们上网站拉网页代码的</p>
+<p>mongoose: 用来连接mongoDB和处理mongo的请求</p>
+<p>好了解完之后,我们要正式开始写代码了</p>
+<p>首先一步,还是连接mongo数据库, 不然我们趴下来的数据就没地儿存了</p>
+<p>// 连接到mongoDB数据库,端口是27017, 我们将内容存储在cnodejs这个数据库中<br>mongoose.connect(‘mongodb://localhost:27017/cnodejs’,function(err) {<br>    if(err) {<br>        throw err<br>    } else {<br>        console.log(‘服务器连接成功…’)<br>    }<br>})<br>// 实例化一个骨架,定义我们要传入的内容的键名及键值<br>var schema = new mongoose.Schema({<br>    title: String,<br>    href: String<br>})<br>// 定义一个模型变量, 我们将模型名称定义为List, 将爬取的内容存储在list这个文档中<br>var model = mongoose.model(‘List’, schema, ‘list’)<br>然后,我们再实例一个express, 方便我们进行操作</p>
+<p>var app = express()<br>使用代码来进行抓取</p>
+<p>app.get(‘/‘, function(req, res, next){<br>    // 使用superagent去抓取<a href="https://cnodejs.org的内容" target="_blank" rel="external">https://cnodejs.org的内容</a><br>    superagent.get(‘<a href="https://cnodejs.org/&#39;).end(function(err" target="_blank" rel="external">https://cnodejs.org/&#39;).end(function(err</a>, sres){<br>        // 常规的错误处理<br>        if(err) return next(err)</p>
+<pre><code>    // sres.text里面存储着网页的html内容, 将它传给cheerio.load之后
+    //就可以得到一个实现了jQuery接口的变量,我们习惯性将其命名为 &apos;$&apos;
+    var $ = cheerio.load(sres.text)
+
+    var items = []
+    // 使用cheerio获取到爬取到的东西的内容
+    $(&apos;#topic_list .topic_title&apos;).each((idx, element)=&gt; {
+
+        // 预定义一个变量,从而提升整体的程序性能
+        var $element = $(element);
+
+        var listModel = new model()
+
+        listModel.title = $element.attr(&apos;title&apos;)
+
+        listModel.href = $element.attr(&apos;href&apos;)
+
+        // 将内容保存到数据库
+        listModel.save((err) =&gt; {
+            if(err) {
+                throw err
+            } else {
+                console.log(&apos;保存成功...&apos;)
+            }
+        })
+    })
+})
+</code></pre><p>})<br>最后一步, 指定服务器的监听端口</p>
+<p>app.listen(8090, function(err) {<br>    if(err) {<br>        throw err<br>    } else {<br>        console.log(‘服务器启动成功.. ‘)<br>    }<br>})<br>全部搞定,我们使用cmd输入命令 node app 或者使用webstorm的ctrl + f9启动一下</p>
+<p>到浏览器中,输入刚刚设置的本地服务器加端口号: localhost:8090</p>
+<p>回来一看,我靠,好多的保存成功啊</p>
+<p>至此,我们的爬取工作就已经全部完成了, 看下成果呗:</p>
+<p>在mongoDB中查看自己的爬取结果</p>
+<p>如果不想麻烦的话, 可以直接安装一个ROBO 3T, 傻瓜式操作</p>
+<p>也可以自己输入指令查看</p>
+<p>在cmd中输入mongo, 进入mongo的交互</p>
+<p>输入指令: use cnodejs 转到我们的cnodejs这个数据库中</p>
+<p>然后输入指令: ‘db.list.find().pretty()’ 爬取的结果就都出来了</p>
+<p>结束</p>
+<p>爬取的过程至此圆满结束</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">原型</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/09/22/nodejs之爬虫/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/12/关于JavaScript中原型的理解/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          关于JavaScript中原型的理解
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2015/06/08/水平垂直居中/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css水平垂直居中的4种方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -228,8 +406,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
