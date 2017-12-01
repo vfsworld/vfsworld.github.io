@@ -230,19 +230,112 @@
 
 
   
-    <article id="post-关于前端路上一对JS的理解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Nodejs的require-模块源码解读" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/12/关于前端路上一对JS的理解/">关于前端路上一对JS的理解</a>
+      <a class="article-title" href="/2017/06/06/Nodejs的require-模块源码解读/">Nodejs的require()模块源码解读</a>
     </h1>
   
 
         
-        <a href="/2017/03/12/关于前端路上一对JS的理解/" class="archive-article-date">
+        <a href="/2017/06/06/Nodejs的require-模块源码解读/" class="archive-article-date">
+  	<time datetime="2017-06-06T11:44:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2009年, nodejs项目诞生,所有模块一律为commonjs格式.</p>
+<p>时至今日,Nodejs的包管理npm仓库,已经存放了十万百万级的模块,其中绝大部分都是使用的commonjs格式.</p>
+<p>这种格式的核心就是require语句, 模块通过它进行加载.<br>
+        
+          <a class="article-more-a" href="/2017/06/06/Nodejs的require-模块源码解读/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Nodejs</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">require</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Nodejs学习笔记//" class="article-tag-list-link color1">Nodejs学习笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/06/Nodejs的require-模块源码解读/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-关于前端路上一对JS的总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/12/关于前端路上一对JS的总结/">关于前端路上一对JS的总结</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/12/关于前端路上一对JS的总结/" class="archive-article-date">
   	<time datetime="2017-03-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
 </a>
         
@@ -254,7 +347,7 @@
 commonjs是一个对JS进行加强，实现后端编程语言的规范。
 </code></pre><p>AMD<br>    是一个规范:客户端的JS模块化规范,国外流行<br>    AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>
         
-          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的理解/#more">more >></a>
+          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的总结/#more">more >></a>
         
       
 
@@ -278,7 +371,84 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的理解/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/03/12/关于前端路上一对JS的总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JavaScript模块化编程-commonjs和AMD及CMD" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/23/JavaScript模块化编程-commonjs和AMD及CMD/">JavaScript模块化编程-commonjs和AMD及CMD</a>
+    </h1>
+  
+
+        
+        <a href="/2016/11/23/JavaScript模块化编程-commonjs和AMD及CMD/" class="archive-article-date">
+  	<time datetime="2016-11-23T15:00:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="commonjs"><a href="#commonjs" class="headerlink" title="commonjs"></a>commonjs</h1><p>2009年，美国程序员Ryan Dahl创造了node.js项目，将javascript语言用于服务器端编程。</p>
+<p>这标志”Javascript模块化编程”正式诞生。因为老实说，在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。<br>
+        
+          <a class="article-more-a" href="/2016/11/23/JavaScript模块化编程-commonjs和AMD及CMD/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/23/JavaScript模块化编程-commonjs和AMD及CMD/">展开全文 >></a>
         </p>
       
 
@@ -356,6 +526,159 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2016/11/12/关于JavaScript中原型的理解/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Javascript中隐式类型转换的神坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/03/Javascript中隐式类型转换的神坑/">Javascript中隐式类型转换的神坑</a>
+    </h1>
+  
+
+        
+        <a href="/2016/10/03/Javascript中隐式类型转换的神坑/" class="archive-article-date">
+  	<time datetime="2016-10-03T06:16:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>开篇之前, 大家先思考一个问题, 下面这段代码运行出来之后的结果是多少<br>
+        
+          <a class="article-more-a" href="/2016/10/03/Javascript中隐式类型转换的神坑/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/03/Javascript中隐式类型转换的神坑/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-first-child与first-of-type" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/30/first-child与first-of-type/">first-child与first-of-type</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/30/first-child与first-of-type/" class="archive-article-date">
+  	<time datetime="2016-09-30T06:16:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>first-child是CSS2中定义的选择器，从字面意思也可以理解，就是第一个子元素。不如有段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">      &lt;p&gt;第一个子元素&lt;/p&gt;</span><br><span class="line">      &lt;h1&gt;第二个子元素&lt;/h1&gt;</span><br><span class="line">      &lt;span&gt;第三个子元素&lt;/span&gt;</span><br><span class="line">      &lt;span&gt;第四个子元素&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2016/09/30/first-child与first-of-type/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">css2</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/30/first-child与first-of-type/">展开全文 >></a>
         </p>
       
 
@@ -463,29 +786,30 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 
 
   
-    <article id="post-水平垂直居中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JavaScript深入浅出-call-apply" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/水平垂直居中/">css水平垂直居中的4种方法</a>
+      <a class="article-title" href="/2016/09/03/JavaScript深入浅出-call-apply/">JavaScript深入浅出-call/apply</a>
     </h1>
   
 
         
-        <a href="/2015/06/08/水平垂直居中/" class="archive-article-date">
-  	<time datetime="2015-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-08</time>
+        <a href="/2016/09/03/JavaScript深入浅出-call-apply/" class="archive-article-date">
+  	<time datetime="2016-09-03T14:51:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="方法一-margin-auto"><a href="#方法一-margin-auto" class="headerlink" title="方法一:margin:auto"></a>方法一:margin:auto</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">.container&#123;</span><br><span class="line">	  width: 300px;</span><br><span class="line">	  height: 300px;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  border: 1px solid #465468;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>本文中call和apply仅占小部分,主要还是关于自己在学习过程中踩到的坑的记录.</p>
+<h1 id="使用call方法将变量产生的数组进行转换"><a href="#使用call方法将变量产生的数组进行转换" class="headerlink" title="使用call方法将变量产生的数组进行转换"></a>使用call方法将变量产生的数组进行转换</h1>
         
-          <a class="article-more-a" href="/2015/06/08/水平垂直居中/#more">more >></a>
+          <a class="article-more-a" href="/2016/09/03/JavaScript深入浅出-call-apply/#more">more >></a>
         
       
 
@@ -499,17 +823,28 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">居中</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaScript-学习笔记//" class="article-tag-list-link color1">JavaScript 学习笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/06/08/水平垂直居中/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/09/03/JavaScript深入浅出-call-apply/">展开全文 >></a>
         </p>
       
 
@@ -539,30 +874,29 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 
 
   
-    <article id="post-清除浮动的三种方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JavaScript深入浅出-表达式和运算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/清除浮动的三种方法/">清除浮动的三种方法</a>
+      <a class="article-title" href="/2016/08/18/JavaScript深入浅出-表达式和运算符/">JavaScript深入浅出-表达式和运算符</a>
     </h1>
   
 
         
-        <a href="/2015/06/08/清除浮动的三种方法/" class="archive-article-date">
-  	<time datetime="2015-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-08</time>
+        <a href="/2016/08/18/JavaScript深入浅出-表达式和运算符/" class="archive-article-date">
+  	<time datetime="2016-08-18T06:10:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一:"></a>方法一:</h3><p>在结束浮动的标签后添加一个带有清除浮动类的div</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CSS代码:</span><br><span class="line">	.clear&#123;</span><br><span class="line">		clear: both;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">HTML代码:</span><br><span class="line">	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+        <p>表达式是能计算出值的任何业务单元。<br>原始表达式：常量，直接量、关键字、变量<br>原始表达式和原始表达式可以通过运算符链接成符合表达式<br>函数表达式：<br>属性访问表达式：对定义好的表达式的属性进行访问<br>调用表达式：调用函数，等<br>堆箱创建表达式：<br>
         
-          <a class="article-more-a" href="/2015/06/08/清除浮动的三种方法/#more">more >></a>
+          <a class="article-more-a" href="/2016/08/18/JavaScript深入浅出-表达式和运算符/#more">more >></a>
         
       
 
@@ -576,7 +910,7 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">清除浮动</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
@@ -586,7 +920,7 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2015/06/08/清除浮动的三种方法/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/18/JavaScript深入浅出-表达式和运算符/">展开全文 >></a>
         </p>
       
 
@@ -616,6 +950,10 @@ commonjs是一个对JS进行加强，实现后端编程语言的规范。
 
 
   
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -709,7 +1047,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
+                <a href="javascript:void(0)" class="js-tag color5">Flex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Nodejs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">require</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HTML & CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -717,19 +1091,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">居中</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">清除浮动</a>
+                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+                <a href="javascript:void(0)" class="js-tag color3">居中</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">清除浮动</a>
               </li>
             
             <div class="clearfix"></div>
